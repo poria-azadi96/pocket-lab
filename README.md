@@ -53,9 +53,71 @@ Throughout this series, we numerically solve coupled differential equations and 
 ## 🚀 Quick Start
 
 ### Track 1: Native Mobile Integration (Android via Termux — Offline)
+
 1. Download and install **Termux** exclusively from [GitHub Releases](https://github.com/termux/termux-app/releases) or F-Droid (do not install the outdated Google Play version).
+
 2. Install the isolated Ubuntu userland and log in:
 ```bash
 pkg install proot-distro -y
 proot-distro install ubuntu
 proot-distro login ubuntu
+```
+
+3. Install core scientific Python and numerical rendering packages:
+```bash
+apt update && apt install python3 python3-numpy python3-matplotlib python3-pil -y
+```
+
+4. Execute the simulation script:
+```bash
+python3 double_pendulum.py
+```
+
+### Track 2: One-Click Cloud Execution (iOS, Android & Web Browsers)
+
+For iOS devices or users who prefer a graphical interface, click the **Open in Colab** badge in the table above to run the Jupyter notebook directly in the cloud.
+
+---
+
+## 📁 Repository Structure
+
+```text
+pocket-lab/
+│
+├── README.md                   # Primary English documentation
+├── README.fa.md                # Persian documentation
+├── LICENSE                     # MIT Open-Source License
+│
+└── episodes/
+    ├── ep00-environment-setup/ # Linux runtime installation guide
+    │   └── README.md
+    │
+    ├── ep01-double-pendulum/    # Double pendulum chaos simulation
+    │   ├── double_pendulum.py  # Simulation engine and GIF renderer
+    │   └── README.md           # Lagrangian derivation and analysis
+    │
+    ├── ep02-boids-flocking/    # Upcoming modules
+    └── ep03-game-of-life/
+```
+
+---
+
+## 🌐 Community & Connect
+
+* 📢 **Telegram Channel:** Ready-to-copy commands, script downloads, and Q&A  
+  👉 [Join The Maze (@the_maze2022)](https://t.me/the_maze2022)
+
+* 📸 **Instagram:** Reel breakdowns and visual animation demos  
+  👉 [Follow @poria_azadi_official](https://www.instagram.com/poria_azadi_official/)
+
+* 🎥 **YouTube:** In-depth tutorials and scientific explorations  
+  👉 [Subscribe to @PoriaAzadi_official](https://www.youtube.com/@PoriaAzadi_official)
+
+* 🔬 **ResearchGate:** Academic publications and research portfolio  
+  👉 [Poria Azadi on ResearchGate](https://www.researchgate.net/profile/Poria-Azadi-2)
+
+---
+
+<div align="center">
+  <sub>Developed by <b>Poria Azadi</b> • Released under the <a href="LICENSE">MIT License</a></sub>
+</div>
