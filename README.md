@@ -20,16 +20,17 @@
   <b>"Your smartphone is not merely a content consumption device; it can serve as a genuine environment for modeling and simulating complex scientific phenomena."</b>
 </p>
 
-[About](#-about-the-project) •
-[Episodes](#-simulation-episodes) •
-[Quick Start](#-quick-start) •
-[Repository Structure](#-repository-structure) •
-[Community](#-community--connect)
+[About](#about-the-project) •
+[Episodes](#simulation-episodes) •
+[Quick Start](#quick-start) •
+[Repository Structure](#repository-structure) •
+[Community](#community--connect)
 
 ---
 
 </div>
 
+<a id="about-the-project"></a>
 ## 🧬 About the Project
 
 Modern mobile processors possess formidable computational performance, often outperforming the supercomputers of previous decades. The core objective of **Pocket Lab** is to demonstrate that rigorous computational physics, non-linear dynamics, and mathematical modeling do not strictly require costly academic clusters or dedicated workstations.
@@ -38,18 +39,20 @@ Throughout this series, we numerically solve coupled differential equations and 
 
 ---
 
+<a id="simulation-episodes"></a>
 ## 🎬 Simulation Episodes
 
 | # | Simulation Title | Scientific Phenomenon | Status | Source Code | Cloud Run |
 | :---: | :--- | :--- | :---: | :---: | :---: |
 | **00** | **Pocket Environment Setup** | Native Ubuntu Linux and scientific Python via Termux | ✅ Complete | [Setup Guide](episodes/ep00-environment-setup/) | — |
 | **01** | **Double Pendulum Simulation** | Deterministic chaos & extreme sensitivity ($1.0^\circ$ offset) | ✅ Complete | [Python Code](episodes/ep01-double-pendulum/double_pendulum.py) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/) |
-| **02** | **Boids Flocking Model** | Emergence and self-organizing collective intelligence | ⏳ Coming Soon | — | — |
+| **02** | **Boids Flocking Model** | Emergence and self-organizing collective intelligence | ✅ Complete | [Python Code](episodes/ep02-boids-flocking/boids_simulation_20s.py) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/) |
 | **03** | **Conway’s Game of Life** | Cellular automata and complex life dynamics from simple rules | ⏳ Coming Soon | — | — |
 | **04** | **Epidemic Dynamics (SIR)** | Mathematical modeling of viral spread and threshold mechanics | ⏳ Coming Soon | — | — |
 
 ---
 
+<a id="quick-start"></a>
 ## 🚀 Quick Start
 
 ### Track 1: Native Mobile Integration (Android via Termux — Offline)
@@ -68,9 +71,13 @@ proot-distro login ubuntu
 apt update && apt install python3 python3-numpy python3-matplotlib python3-pil -y
 ```
 
-4. Execute the simulation script:
+4. Execute the simulation scripts:
 ```bash
-python3 double_pendulum.py
+# Episode 01: Double Pendulum Chaos
+python3 episodes/ep01-double-pendulum/double_pendulum.py
+
+# Episode 02: Boids Flocking Emergence
+python3 episodes/ep02-boids-flocking/boids_simulation_20s.py
 ```
 
 ### Track 2: One-Click Cloud Execution (iOS, Android & Web Browsers)
@@ -79,6 +86,7 @@ For iOS devices or users who prefer a graphical interface, click the **Open in C
 
 ---
 
+<a id="repository-structure"></a>
 ## 📁 Repository Structure
 
 ```text
@@ -94,14 +102,21 @@ pocket-lab/
     │
     ├── ep01-double-pendulum/    # Double pendulum chaos simulation
     │   ├── double_pendulum.py  # Simulation engine and GIF renderer
-    │   └── README.md           # Lagrangian derivation and analysis
+    │   ├── README.md           # Lagrangian derivation and analysis (EN)
+    │   └── README.fa.md        # Mathematical guide and analysis (FA)
     │
-    ├── ep02-boids-flocking/    # Upcoming modules
-    └── ep03-game-of-life/
+    ├── ep02-boids-flocking/    # Boids flocking & collective intelligence
+    │   ├── boids_simulation_20s.py # Vectorized kinematic flocking engine
+    │   ├── README.md           # Scientific background and formulations (EN)
+    │   └── README.fa.md        # Scientific guide and analysis (FA)
+    │
+    ├── ep03-game-of-life/      # Cellular automata (Upcoming)
+    └── ep04-epidemic-sir/      # Epidemic threshold dynamics (Upcoming)
 ```
 
 ---
 
+<a id="community--connect"></a>
 ## 🌐 Community & Connect
 
 * 📢 **Telegram Channel:** Ready-to-copy commands, script downloads, and Q&A  
