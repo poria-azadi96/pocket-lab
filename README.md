@@ -1,7 +1,9 @@
 <div align="center">
 
-# 📱 Pocket Lab | آزمایشگاه محاسباتی در جیب
-### شبیه‌سازی‌های علمی و مدل‌سازی ریاضی، مستقیم روی پردازنده گوشی هوشمند
+# 📱 Pocket Lab | Mobile Scientific Computing
+### Scientific simulations and mathematical modeling directly on smartphone processors
+
+[English](README.md) • [فارسی](README.fa.md)
 
 [![GitHub Profile](https://img.shields.io/badge/GitHub-poria--azadi96-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/poria-azadi96)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-The%20Maze-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/the_maze2022)
@@ -15,44 +17,44 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 <p align="center">
-  <b>«گوشی هوشمند در جیب شما صرفاً ابزاری برای مصرف محتوا نیست؛ می‌تواند یک بستر واقعی برای مدل‌سازی و شبیه‌سازی پدیده‌های شگفت‌انگیز جهان باشد.»</b>
+  <b>"Your smartphone is not merely a content consumption device; it can serve as a genuine environment for modeling and simulating complex scientific phenomena."</b>
 </p>
 
-[درباره پروژه](#-درباره-پروژه) •
-[فهرست اپیزودها](#-فهرست-شبیه‌سازی‌ها-episodes) •
-[راه‌اندازی سریع](#-شروع-سریع-quick-start) •
-[ساختار فایل‌ها](#-ساختار-فایل‌ها) •
-[کانال تلگرام](https://t.me/the_maze2022)
+[About](#-about-the-project) •
+[Episodes](#-simulation-episodes) •
+[Quick Start](#-quick-start) •
+[Repository Structure](#-repository-structure) •
+[Community](#-community--connect)
 
 ---
 
 </div>
 
-## 🧬 درباره پروژه
+## 🧬 About the Project
 
-گوشی‌های هوشمند امروزی مجهز به پردازنده‌های چند‌هسته‌ای قدرتمندی هستند که توان محاسباتی آن‌ها از کامپیوترهای غول آسای نسل‌های پیشین فراتر است. هدف پروژه **Pocket Lab** این است که نشان دهد برای ورود به دنیای فیزیک محاسباتی، نظریه آشوب، و پویایی سیستم‌های غیرخطی، لزوماً نیازی به کلاسترهای پردازشی یا لپ‌تاپ‌های گران‌قیمت ندارید.
+Modern mobile processors possess formidable computational performance, often outperforming the supercomputers of previous decades. The core objective of **Pocket Lab** is to demonstrate that rigorous computational physics, non-linear dynamics, and mathematical modeling do not strictly require costly academic clusters or dedicated workstations.
 
-در این سری آموزشی، بدون ساده‌سازی‌های غیرعلمی، دستگاه معادلات دیفرانسیل و الگوریتم‌های پیچیده طبیعت را مستقیماً روی بستر لینوکس بومی موبایل اجرا و انیمیت می‌کنیم.
+Throughout this series, we numerically solve coupled differential equations and model natural algorithms natively inside mobile Linux environments using Python.
 
 ---
 
-## 🎬 فهرست شبیه‌سازی‌ها (Episodes)
+## 🎬 Simulation Episodes
 
-| # | عنوان شبیه‌سازی | پدیده علمی | وضعیت | سورس کد | اجرای ابری |
+| # | Simulation Title | Scientific Phenomenon | Status | Source Code | Cloud Run |
 | :---: | :--- | :--- | :---: | :---: | :---: |
-| **00** | **راه‌اندازی کارگاه جیبی** | راه‌اندازی لینوکس اوبونتو و پایتون بومی روی ترموکس | ✅ تکمیل | [راهنما](episodes/ep00-environment-setup/) | — |
-| **01** | **آونگ دوتایی (Double Pendulum)** | نظریه آشوب معین و حساسیت به شرایط اولیه (۱° اختلاف) | ✅ تکمیل | [کد پایتون](episodes/ep01-double-pendulum/double_pendulum.py) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/) |
-| **02** | **پرواز هماهنگ پرندگان (Boids)** | پدیداری (Emergence) و هوش جمعی خودسامانده | ⏳ به‌زودی | — | — |
-| **03** | **بازی زندگی کانوی (Game of Life)** | اتوماتای سلولی و خلق حیات از دل قوانین ساده | ⏳ به‌زودی | — | — |
-| **04** | **دینامیک بیماری‌ها (SIR Model)** | مدل‌سازی ریاضی انتقال ویروس و شکست زنجیره | ⏳ به‌زودی | — | — |
+| **00** | **Pocket Environment Setup** | Native Ubuntu Linux and scientific Python via Termux | ✅ Complete | [Setup Guide](episodes/ep00-environment-setup/) | — |
+| **01** | **Double Pendulum Simulation** | Deterministic chaos & extreme sensitivity ($1.0^\circ$ offset) | ✅ Complete | [Python Code](episodes/ep01-double-pendulum/double_pendulum.py) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/) |
+| **02** | **Boids Flocking Model** | Emergence and self-organizing collective intelligence | ⏳ Coming Soon | — | — |
+| **03** | **Conway’s Game of Life** | Cellular automata and complex life dynamics from simple rules | ⏳ Coming Soon | — | — |
+| **04** | **Epidemic Dynamics (SIR)** | Mathematical modeling of viral spread and threshold mechanics | ⏳ Coming Soon | — | — |
 
 ---
 
-## 🚀 شروع سریع (Quick Start)
+## 🚀 Quick Start
 
-### مسیر اول: اجرای بومی در اندروید (آفلاین و بدون نیاز به اینترنت)
-1. نرم‌افزار **Termux** را حتماً از [نسخه‌های رسمی گیت‌هاب](https://github.com/termux/termux-app/releases) دانلود و نصب کنید (از گوگل‌پلی دانلود نکنید).
-2. محیط لینوکس اوبونتو را نصب کرده و وارد آن شوید:
+### Track 1: Native Mobile Integration (Android via Termux — Offline)
+1. Download and install **Termux** exclusively from [GitHub Releases](https://github.com/termux/termux-app/releases) or F-Droid (do not install the outdated Google Play version).
+2. Install the isolated Ubuntu userland and log in:
 ```bash
 pkg install proot-distro -y
 proot-distro install ubuntu
